@@ -1,0 +1,47 @@
+$maincolor: #C2A83E;
+$fontcolor: rgb(14, 13, 13);
+$transition02: 0.2s ease-out;
+*, *::after, *::before {
+    /*fixes here*/
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+header {
+    h1 {
+        position: absolute;
+        left: 1%;
+        top: 2%;
+    }
+    position: relative;
+    background-color: $maincolor;
+    color: $fontcolor;
+    margin: 0;
+   display: flex;
+    flex-direction: row;
+    justify-content: center;
+    nav {
+        a {
+            text-decoration: none;
+            color: $fontcolor;
+            font-weight: 600;
+            padding: 10px;
+            &:hover {
+                background-color: $fontcolor;
+                color: $maincolor;
+                transition: background-color $transition02, color $transition02;
+            }
+        }
+    }
+}
+h1 {
+    margin-top: 0;
+}
+nav ul {
+    display: flex;
+}
+nav ul li {
+    list-style-type: none;
+    margin-right: 15px;
+}

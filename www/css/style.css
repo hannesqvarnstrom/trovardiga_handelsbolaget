@@ -1,20 +1,61 @@
+*, *::after, *::before {
+  /*fixes here*/
+}
+
 body {
-    margin: 0;
+  margin: 0;
+  font-family: sans-serif;
 }
+
 header {
-    background-color: black;
-    color: whitesmoke;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
+  position: relative;
+  background-color: #C2A83E;
+  color: #0e0d0d;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
+header h1 {
+  position: absolute;
+  left: 1%;
+  top: 2%;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #0e0d0d;
+  font-weight: 600;
+  padding: 10px;
+}
+
+header nav a:hover {
+  background-color: #0e0d0d;
+  color: #C2A83E;
+  -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
 h1 {
-    margin-top: 0;
+  margin-top: 0;
 }
+
 nav ul {
-    display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
+
 nav ul li {
-    list-style-type: none;
-    margin-right: 15px;
+  list-style-type: none;
+  margin-right: 15px;
 }
+/*# sourceMappingURL=style.css.map */
